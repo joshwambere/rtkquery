@@ -1,7 +1,10 @@
 import '../styles/globals.css'
+import '../styles/loader.css'
 import type { AppProps } from 'next/app'
 import {store} from "../redux/store";
 import {Provider} from "react-redux";
+import dynamic from "next/dynamic";
+import BigLoader from "../components/layout/loaders/BigLoader";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return(
@@ -11,4 +14,9 @@ function MyApp({ Component, pageProps }: AppProps) {
   )
 }
 
-export default MyApp
+
+
+export default dynamic(() => Promise.resolve(MyApp), {
+    ssr: false,
+    loading: () => <BigLoader />,
+})

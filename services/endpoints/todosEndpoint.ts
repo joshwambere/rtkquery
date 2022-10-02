@@ -5,7 +5,7 @@ const todosEndpoint = api.injectEndpoints({
     endpoints: (builder) => ({
         todos: builder.query<Todo[], void>({
             query: () => ({
-                url:'todos?_limit=8',
+                url:'todos?_limit=8&_sort=createdAt&_order=desc',
                 method: 'GET',
             }),
             providesTags: ['Todo'],

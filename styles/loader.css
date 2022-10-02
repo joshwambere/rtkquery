@@ -1,0 +1,106 @@
+.loader-container{
+    background: #e7e5f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+}
+.animation{
+    width:300px;
+    height:300px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.wifi-item-1{
+    width:60px;
+    height:60px;
+    display:inline-block;
+    border:6px solid transparent;
+    border-top-color: #6600ed;
+    border-radius:50%;
+    border-style: solid;
+    margin: 5px;
+    z-index:2;
+    animation: loading 1.5s ease-in-out infinite;
+    animation-delay:.1s;
+}
+.wifi-item-1-inactive{
+    width:60px;
+    height:60px;
+    display:inline-block;
+    border:6px solid transparent;
+    border-top-color: #aeabd8;
+    border-radius:50%;
+    border-style: solid;
+    margin: -57px 5px 5px;
+    animation: loading 1.5s ease-in-out infinite;
+    animation-delay:.35s;
+
+}
+.wifi-item-2{
+    width:40px;
+    height:40px;
+    display:inline-block;
+    border:6px solid transparent;
+    border-top-color: #6600ed;
+    border-radius:50%;
+    border-style: solid;
+    margin: -67px 5px 5px;
+    z-index:2;
+    animation: loading 1.5s ease-in-out infinite;
+    animation-delay:.15s;
+
+}
+.wifi-item-2-inactive{
+    width:40px;
+    height:40px;
+    display:inline-block;
+    border:6px solid transparent;
+    border-top-color: #aeabd8;
+    border-radius:50%;
+    border-style: solid;
+    margin: -67px 5px 5px;
+    animation: loading 1.5s ease-in-out infinite;
+    animation-delay:.4s;
+
+}
+.wifi-item-3{
+    width:20px;
+    height:20px;
+    display:inline-block;
+    border:6px solid transparent;
+    border-top-color: #6600ed;
+    border-radius:50%;
+    border-style: solid;
+    margin: -47px 5px 5px;
+    z-index:2;
+    animation: loading 1.5s ease-in-out infinite;
+    animation-delay:.2s;
+}
+.wifi-item-3-inactive{
+    width:20px;
+    height:20px;
+    display:inline-block;
+    border:6px solid transparent;
+    border-top-color: #aeabd8;
+    border-radius:50%;
+    border-style: solid;
+    margin: -47px 5px 5px;
+    animation: loading 1.5s ease-in-out infinite;
+    animation-delay:.45s;
+
+}
+
+@keyframes loading{
+    to{
+        transform:rotate(-1turn);
+    }
+}
