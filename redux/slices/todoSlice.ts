@@ -10,6 +10,7 @@ export const TodoSlice = createSlice({
                 id: Math.random(),
                 title: action.payload,
                 completed: false,
+                createdAt: new Date(),
             };
             state.push(todo);
         }
